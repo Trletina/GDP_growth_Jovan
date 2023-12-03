@@ -27,7 +27,7 @@ def growth_with_labels(numbers, labels_data):
 
     return growth_rates, labels
 
-# colecting data
+# collecting data
 URL = 'https://api.worldbank.org/v2/countries/USA/indicators/NY.GDP.MKTP.CD?pages=2&per_page=500&format=json'
 r = requests.get(URL)
 data = json.loads(r.text)
